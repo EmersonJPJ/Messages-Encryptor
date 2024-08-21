@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Encriptador</title>
+</head>
+<body>
+    <img src="img/fondo1.jpg" alt="Imagen de fondo" class="background-image">
+
+    <main>
+        <h1>Encriptador</h1>
+        <div class="container">
+            <div class="container-texto">
+                <span id="charCount" class="char-count">0/300</span>
+                <textarea id="inputTexto" maxlength="300" placeholder="Ingrese su mensaje secreto"></textarea>
+            </div>
+            <div class="container-resultado">
+                <textarea placeholder="Resultado" readonly></textarea>
+            </div>
+        </div>
+        <div>
+            <button id="btnEncriptar" disabled>Encriptar</button>
+            <button id="btnDesencriptar" disabled>Desencriptar</button>
+            <button id="btnCopiar">Copiar</button>
+            <p id="advertencia" class="hidden">No se permiten números, caracteres especiales ni mayúsculas.</p>
+        </div>
+    </main>
+
+    <div id="modal" class="modal hidden">
+        <div class="modal-content">
+            <span id="modal-close" class="modal-close">&times;</span>
+            <h2>Reglas de Entrada</h2>
+            <ul>
+                <li>No se permiten números.</li>
+                <li>No se permiten caracteres especiales.</li>
+                <li>Solo se permiten letras minúsculas.</li>
+            </ul>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="social-icons">
+            <p>Hecho por Emerson Solano</p>
+    
+            <div class="social-icon" id="github">
+                <a href="https://github.com/EmersonJPJ" target="_blank">
+                    <img src="img/gitlogo.png" alt="GitHub">
+                    <div class="tooltip">
+                        <span class="tooltip-text">EmersonJPJ</span>
+                    </div>
+                </a>
+            </div>
+            <div class="social-icon" id="linkedin">
+                <a href="https://www.linkedin.com/in/emerson-solano/" target="_blank">
+                    <img src="img/linkedin.png" alt="LinkedIn">
+                    <div class="tooltip">
+                        <span class="tooltip-text">Emerson Solano</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </footer>
+    
+    
+
+    <script src="app.js"></script>
+</body>
+</html>
